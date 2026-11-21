@@ -411,3 +411,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justif
 /* keep app icons square at every width (2026-11-20) */
 img.app-icon,.nav .menu li img{max-width:none;flex:none;aspect-ratio:1/1;object-fit:contain}
 .dl>img.app-icon{justify-self:start}
+/* 製品メニュー: 配布中を赤で強調 */
+.nav .menu li.live small{color:var(--red);font-weight:600;display:inline-flex;align-items:center;gap:5px}
+.nav .menu li.live small::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
