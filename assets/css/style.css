@@ -414,3 +414,19 @@ img.app-icon,.nav .menu li img{max-width:none;flex:none;aspect-ratio:1/1;object-
 /* 製品メニュー: 配布中を赤で強調 */
 .nav .menu li.live small{color:var(--red);font-weight:600;display:inline-flex;align-items:center;gap:5px}
 .nav .menu li.live small::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+/* SHA-256 とライセンスの表 */
+.sums{margin-top:56px;padding-top:32px;border-top:1px solid var(--rule)}
+.sums h3{margin:6px 0 10px}
+.sums p{color:var(--muted);max-width:760px}
+.sums code,.lic code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:16px}
+.sums table,table.lic{width:100%;border-collapse:collapse;font-size:14px}
+.sums td,table.lic td,table.lic th{text-align:left;vertical-align:top;padding:12px 12px 12px 0;border-bottom:1px solid var(--rule)}
+table.lic th{font-weight:500;color:var(--muted);font-size:12px}
+.sums td:first-child{white-space:nowrap}
+.sums code.hash{color:var(--muted);word-break:break-all}
+@media (max-width:640px){.sums td{display:block;padding:4px 0;border:0}.sums tr{display:block;padding:10px 0;border-bottom:1px solid var(--rule)}}
+table.lic td:nth-child(1),table.lic td:nth-child(3){white-space:nowrap}
+table.lic{min-width:560px}
+.foot-links{display:flex;flex-wrap:wrap;column-gap:20px;row-gap:8px}
+.foot-links a{white-space:nowrap}
